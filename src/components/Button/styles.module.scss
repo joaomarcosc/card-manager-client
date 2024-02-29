@@ -1,0 +1,11 @@
+.button_wrapper {
+    padding: $padding-size-20;
+    font-weight: 700;
+
+    border: none;
+    border-radius: $space-xxs;
+    background-color: $pink;
+    color: $white;
+
+    cursor: pointer;
+}

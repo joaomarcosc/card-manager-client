@@ -1,0 +1,14 @@
+.container_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 0 $space-md;
+}
+
+@media (min-width: 960px) {
+    .container_wrapper {
+        padding: 0 $space-lg;
+    }
+  }
+  

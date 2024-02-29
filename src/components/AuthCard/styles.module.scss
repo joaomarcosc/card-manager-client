@@ -1,0 +1,54 @@
+.authCard_wrapper {
+    background-color: $primary-color;
+    width: 400px;
+    display: grid;
+    gap: $margin-size-24;
+
+    .authCard__title {
+        color: $color;
+        font-size: $font-size-32;
+        font-weight: 700;
+        margin-bottom: $margin-size-16;
+    }
+
+    .authCard__divider {
+        height: 2px;
+        background-color: $secondary-color;
+        margin: $margin-size-16 0;
+    }
+
+    .authCard__type_button {
+        font-weight: 700;
+        padding: $margin-size-16;
+        display: flex;
+        align-items: start;
+        gap: $margin-size-12;
+        border: 1px solid $pink;
+        cursor: pointer;
+        border-radius: $space-xxs;
+        background-color: $secondary-color;
+        color: $color;
+
+
+        & > svg:first-child {
+            font-size: $font-size-20
+        }
+
+        
+        & > svg:last-child {
+            align-self: center;
+            margin-left: auto;
+        }
+    }
+
+    .authCard__type_button__text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: $padding-size-12;
+
+        & > span {
+            color: $pink
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use 'colors' as *;
+
+html[data-theme="dark"] {
+    --primary-color: #{$black};
+    --secondary-color: #{$black-20};
+    --color: #{$white};
+}
+
+html[data-theme="light"] {
+    --primary-color: #{$white};
+    --secondary-color: #{$blue-transparent};
+    --color: #{$black};
+}
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$color: var(--color)
