@@ -1,4 +1,4 @@
-import { AuthCard } from '../../components/AuthCard'
+import { AuthCard } from '@components/AuthCard'
 import styles from './styles.module.scss'
 
 export function AccessPage() {

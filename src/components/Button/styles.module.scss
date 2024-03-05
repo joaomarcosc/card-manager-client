@@ -1,11 +1,75 @@
 .button_wrapper {
-    padding: $padding-size-20;
+    color: $white;
     font-weight: 700;
+    cursor: pointer;
+}
 
+.sm {
+    padding: $padding-size-8;
+}
+
+.md {
+    padding: $padding-size-12;
+}
+
+.lg {
+    padding: $padding-size-20;
+}
+
+.text {
+    background-color: transparent;
+    border: none;
+
+    &.error {
+        color: $error;
+    }
+
+    &.success {
+        color: $success;
+    }
+
+    &.warning {
+        color: $warning;
+    }
+}
+
+.contained {
     border: none;
     border-radius: $space-xxs;
     background-color: $pink;
-    color: $white;
 
-    cursor: pointer;
+    &.error {
+        background-color: $error;
+    }
+
+    &.success {
+        color: $black-20;
+        background-color: $success;
+    }
+
+    &.warning {
+        color: $black-20;
+        background-color: $warning;
+    }
+}
+
+.outlined {
+    border: 1px solid $pink;
+    border-radius: $space-xxs;
+    background-color: transparent;
+
+    &.error {
+       color: $error;
+       border-color: $error;
+    }
+
+    &.success {
+        color: $success;
+        border-color: $success;
+    }
+
+    &.warning {
+        color: $warning;
+        border-color: $warning;
+     }
 }

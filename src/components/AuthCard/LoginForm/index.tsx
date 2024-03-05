@@ -1,11 +1,11 @@
-import { Button } from '../../Button'
-import { Input } from '../../Input'
 import { useFormController } from './useFormController'
 import styles from './styles.module.scss'
+import { Input } from '@components/Input'
+import { Button } from '@components/Button'
 
 export function LoginForm() {
   const { controller, handleSubmit } = useFormController()
-  console.log(controller.formState.errors)
+
   return (
     <form
       className={styles.loginForm_wrapper}

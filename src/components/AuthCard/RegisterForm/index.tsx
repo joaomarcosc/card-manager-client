@@ -1,7 +1,7 @@
-import { Button } from '../../Button'
-import { Input } from '../../Input'
 import { useFormController } from './useFormController'
 import styles from './styles.module.scss'
+import { Input } from '@components/Input'
+import { Button } from '@components/Button'
 
 export function RegisterForm() {
   const { controller, handleSubmit } = useFormController()

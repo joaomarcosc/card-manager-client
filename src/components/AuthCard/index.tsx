@@ -1,9 +1,9 @@
 import styles from './styles.module.scss'
 import { IoRocketOutline } from 'react-icons/io5'
 import { IoIosArrowForward } from 'react-icons/io'
-import { LoginForm } from './LoginForm'
-import { RegisterForm } from './RegisterForm'
 import { useState } from 'react'
+import { RegisterForm } from './RegisterForm'
+import { LoginForm } from './LoginForm'
 
 export function AuthCard() {
   const [typeForm, setTypeForm] = useState<'login' | 'register'>('login')
