@@ -4,7 +4,7 @@ import { Input } from '@components/Input'
 import { Button } from '@components/Button'
 
 export function RegisterForm() {
-  const { controller, handleSubmit } = useFormController()
+  const { controller, handleSubmit, isLoading } = useFormController()
 
   return (
     <form
@@ -41,7 +41,7 @@ export function RegisterForm() {
         error={controller.formState.errors.confirmPassword?.message}
       />
 
-      <Button>Criar conta</Button>
+      <Button loading={isLoading}>Criar conta</Button>
     </form>
   )
 }

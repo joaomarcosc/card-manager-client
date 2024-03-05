@@ -1,6 +1,3 @@
-import { useAtom } from 'jotai'
-import { darkModeAtom } from './atoms/themeAtom'
-import { useEffect } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './routes'
 import Providers from './Providers'
@@ -12,15 +9,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import 'react-responsive-modal/styles.css'
 
 function App() {
-  const [darkMode] = useAtom(darkModeAtom)
-
-  useEffect(() => {
-    document.documentElement.setAttribute(
-      'data-theme',
-      darkMode ? 'dark' : 'light',
-    )
-  }, [darkMode])
-
   return (
     <Providers>
       <RouterProvider router={router} />

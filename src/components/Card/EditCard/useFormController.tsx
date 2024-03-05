@@ -34,7 +34,7 @@ export function useFormController(props: IFormProps) {
   }
 
   return {
-    loading: updateCardQuery.isPending,
+    isLoading: updateCardQuery.isPending,
     controller,
     handleSubmit,
   }

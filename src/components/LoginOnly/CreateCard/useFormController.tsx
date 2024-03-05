@@ -33,7 +33,7 @@ export function useFormController({
   }
 
   return {
-    loading: createCardQuery.isPending,
+    isLoading: createCardQuery.isPending,
     controller,
     handleSubmit,
   }

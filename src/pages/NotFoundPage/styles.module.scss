@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      color: $error;
+      font-size: 10rem;
+      padding: 0;
+      margin: 0;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+      color: $error;
+    }
+  
+    a {
+      margin-top: 2rem;
+    }
+  }
+  

@@ -17,8 +17,6 @@ export function Home() {
           description={item.description}
         />
       ))}
-
-      {/* <button onClick={handleClick}>opa</button> */}
     </div>
   )
 }

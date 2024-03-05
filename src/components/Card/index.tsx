@@ -59,6 +59,7 @@ export function Card(props: IProps) {
           variant="contained"
           size="sm"
           color="error"
+          loading={deleteCardMutate.isPending}
         >
           Excluir
         </Button>

@@ -2,6 +2,10 @@
     color: $white;
     font-weight: 700;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
 }
 
 .sm {
@@ -43,12 +47,12 @@
     }
 
     &.success {
-        color: $black-20;
+        color: $black-low;
         background-color: $success;
     }
 
     &.warning {
-        color: $black-20;
+        color: $black-low;
         background-color: $warning;
     }
 }

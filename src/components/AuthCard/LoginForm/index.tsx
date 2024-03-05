@@ -4,7 +4,7 @@ import { Input } from '@components/Input'
 import { Button } from '@components/Button'
 
 export function LoginForm() {
-  const { controller, handleSubmit } = useFormController()
+  const { controller, handleSubmit, isLoading } = useFormController()
 
   return (
     <form
@@ -26,7 +26,7 @@ export function LoginForm() {
         error={controller.formState.errors.password?.message}
       />
 
-      <Button>Entrar</Button>
+      <Button loading={isLoading}>Entrar</Button>
     </form>
   )
 }

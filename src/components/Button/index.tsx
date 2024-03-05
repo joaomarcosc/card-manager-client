@@ -1,6 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react'
 import styles from './styles.module.scss'
 import classNames from 'classnames'
+import { LoadingDots } from '@components/LoadingDots'
 
 type Props = DetailedHTMLProps<
   HTMLAttributes<HTMLButtonElement>,
@@ -9,10 +10,18 @@ type Props = DetailedHTMLProps<
   variant?: 'text' | 'contained' | 'outlined'
   size?: 'sm' | 'md' | 'lg'
   color?: 'warning' | 'success' | 'error'
+  loading?: boolean
 }
 
 export function Button(props: Props) {
-  const { size = 'lg', variant = 'contained', color = '' } = props
+  const {
+    size = 'lg',
+    variant = 'contained',
+    color = '',
+    loading,
+    children,
+    ...rest
+  } = props
 
   return (
     <button
@@ -22,7 +31,10 @@ export function Button(props: Props) {
         styles[variant],
         styles[color],
       )}
-      {...props}
-    />
+      disabled={loading}
+      {...rest}
+    >
+      {loading ? <LoadingDots /> : children}
+    </button>
   )
 }

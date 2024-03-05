@@ -4,7 +4,7 @@ import { Button } from '@components/Button'
 import { useFormController } from './useFormController'
 
 export function CreateCard({ setOpen }: { setOpen: (value: boolean) => void }) {
-  const { controller, handleSubmit } = useFormController({ setOpen })
+  const { controller, handleSubmit, isLoading } = useFormController({ setOpen })
 
   return (
     <form
@@ -17,7 +17,9 @@ export function CreateCard({ setOpen }: { setOpen: (value: boolean) => void }) {
 
       <Input label="Descricao" {...controller.register('description')} />
 
-      <Button size="md">Criar card</Button>
+      <Button loading={isLoading} size="md">
+        Criar card
+      </Button>
     </form>
   )
 }

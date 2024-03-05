@@ -12,7 +12,7 @@ interface IEditCard {
 }
 
 export function EditCard(props: IEditCard) {
-  const { controller, handleSubmit } = useFormController({
+  const { controller, handleSubmit, isLoading } = useFormController({
     setOpen: props.setOpen,
     id: props.id,
   })
@@ -40,7 +40,9 @@ export function EditCard(props: IEditCard) {
         {...controller.register('description')}
       />
 
-      <Button size="md">Editar card</Button>
+      <Button loading={isLoading} size="md">
+        Editar card
+      </Button>
     </form>
   )
 }

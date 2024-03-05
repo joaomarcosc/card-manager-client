@@ -26,5 +26,6 @@ export function useFormController() {
   return {
     controller,
     handleSubmit,
+    isLoading: registerUserMutation.isPending,
   }
 }

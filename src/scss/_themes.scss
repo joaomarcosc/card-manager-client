@@ -2,16 +2,19 @@
 
 html[data-theme="dark"] {
     --primary-color: #{$black};
-    --secondary-color: #{$black-20};
+    --secondary-color: #{$black-low};
+    --contrast-color-20: #{$white-20};
     --color: #{$white};
 }
 
 html[data-theme="light"] {
     --primary-color: #{$white};
     --secondary-color: #{$blue-transparent};
+    --contrast-color-20: #{$black-40};
     --color: #{$black};
 }
 
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
+$contrast-color-20: var(--contrast-color-20);
 $color: var(--color)
